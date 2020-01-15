@@ -3,7 +3,7 @@ class profile::r10k {
     remote => 'https://github.com/DebHarrington/control_repo',
   }
   class {'r10k::webhook::config':
-    use_collective => false,
+    use_mcollective => false,
     enable_ssl     => false,
   }
   class {'r10k::webhook':
